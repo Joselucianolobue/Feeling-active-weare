@@ -1,0 +1,44 @@
+/* media query de tablet */
+@media (max-width: 1024px){
+    
+}
+
+/* media query de mobile */
+@media (max-width: 768px){
+    //header
+    header{
+        display: block;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .logo{
+            display: block;
+            width: 100px;     
+        }
+        #btn_menu:checked ~ .menu ul{
+            visibility: visible;
+            opacity:1;
+        }        
+        label{
+            display: flex;
+            position: relative;
+            right: 25px;
+            flex-direction: row-reverse;
+            img{
+                display: block;
+                width: 50px;
+                margin-left: 1px;
+            }
+        }
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu{
+        width: 80vw;
+    }
+}
