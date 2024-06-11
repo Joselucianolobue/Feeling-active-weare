@@ -1,0 +1,26 @@
+//map
+$button-size: (
+    small: 50px,
+    medium: 70px,
+    large: 90Px
+);
+
+@each $size, $value in $button-size {
+    .button-#{$size}{
+        font-size: $value;
+        padding: $value / 2;
+    }
+    .button-small{
+        font-size: 50px;
+        padding: 25px;
+    }
+    .button-medium{
+        font-size: 70px;
+        padding: 35px;
+    }
+    .button-large{
+        font-size: 90px;
+        padding: 45px;
+    }
+
+}
